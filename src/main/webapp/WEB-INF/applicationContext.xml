@@ -26,14 +26,7 @@
 			expression="org.springframework.stereotype.Controller" /-->
 	</context:component-scan>
 	<!-- mvc中提供了默认的servlet来处理静态资源，即当所有的mapping都匹配不上的时候，
-		最后匹配到SimpleUrlHandlerMapping -->
+		最后匹配到SimpleUrlHandlerMapping，这里主要是用于ModelAndView转发的时候，处理html、jsp等资源用 -->
 	<mvc:default-servlet-handler/>
 
-	<!-- Jsp视图解析器 -->
-	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-		<property name="order" value="2" />
-		<property name="prefix" value="/demo/" />
-		<property name="suffix" value=".jsp" />
-		<property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
-	</bean>
 </beans>

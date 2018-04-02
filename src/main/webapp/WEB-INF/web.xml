@@ -20,12 +20,14 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>dispatcherServlet</servlet-name>
-        <url-pattern>/*</url-pattern>
+        <!-- / 不会匹配JSP页面，/* 匹配所有的资源 -->
+        <url-pattern>/</url-pattern>
     </servlet-mapping>
-    <!-- servlet-mapping>
-		<servlet-name>default</servlet-name>
-		<url-pattern>*.html</url-pattern>
-	</servlet-mapping-->
+    <!-- html 页面不走DispatcherServlet -->
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>*.html</url-pattern>
+    </servlet-mapping>
 
     <welcome-file-list>
         <welcome-file>/index.html</welcome-file>
