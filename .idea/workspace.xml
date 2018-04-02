@@ -6,15 +6,12 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57dc9bcd-c3b5-48dc-b5a2-4a2df327d7f5" name="Default" comment="修改想关配置，以保证能正常访问html、jsp&#10;1 在web.xml中添加html、jsp不走DispatchServlet&#10;2 配置页面解析器&#10;3 &lt;mvc:default-servlet-handler&gt; 用于处理静态资源">
+    <list default="true" id="57dc9bcd-c3b5-48dc-b5a2-4a2df327d7f5" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Test.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/lxy/study/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lxy/study/config/AppConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lxy/study/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lxy/study/controller/TestController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/demo/hello.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/demo/hello.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/haha.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/haha.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,8 +38,8 @@
       <file leaf-file-name="TestController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/lxy/study/controller/TestController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="130" column="34" lean-forward="true" selection-start-line="130" selection-start-column="34" selection-end-line="130" selection-end-column="34" />
+            <state relative-caret-position="158">
+              <caret line="126" column="24" lean-forward="true" selection-start-line="126" selection-start-column="24" selection-end-line="126" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -50,8 +47,8 @@
       <file leaf-file-name="AppConfig.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/lxy/study/config/AppConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+            <state relative-caret-position="249">
+              <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -62,26 +59,35 @@
       <file leaf-file-name="applicationContext.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="31" column="8" lean-forward="true" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
+            <state relative-caret-position="226">
+              <caret line="29" column="34" lean-forward="true" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FrameworkServlet.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Test.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/Test.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="10" lean-forward="true" selection-start-column="10" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FrameworkServlet.java" pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.5.RELEASE/spring-webmvc-4.3.5.RELEASE-sources.jar!/org/springframework/web/servlet/FrameworkServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="861" column="5" lean-forward="true" selection-start-line="861" selection-start-column="5" selection-end-line="861" selection-end-column="5" />
+            <state relative-caret-position="174">
+              <caret line="862" lean-forward="true" selection-start-line="862" selection-end-line="862" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="web.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="29" column="22" lean-forward="true" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+            <state relative-caret-position="160">
+              <caret line="26" column="77" selection-start-line="26" selection-start-column="77" selection-end-line="26" selection-end-column="77" />
             </state>
           </provider>
         </entry>
@@ -126,10 +132,11 @@
         <option value="$PROJECT_DIR$/src/main/webapp/haha.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/demo/hello.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/lxy/study/config/AppConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/lxy/study/controller/TestController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lxy/study/config/AppConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/Test.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
       </list>
     </option>
   </component>
@@ -333,7 +340,9 @@
               <item name="springmvc" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="study" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springmvc" type="b2602c69:ProjectViewProjectNode" />
@@ -341,7 +350,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springmvc" type="b2602c69:ProjectViewProjectNode" />
@@ -640,7 +648,7 @@
       <workItem from="1522516481084" duration="16000" />
       <workItem from="1522517053908" duration="10379000" />
       <workItem from="1522592541333" duration="3596000" />
-      <workItem from="1522596239150" duration="8162000" />
+      <workItem from="1522596239150" duration="9330000" />
     </task>
     <task id="LOCAL-00001" summary="Just for test">
       <created>1522599947823</created>
@@ -677,11 +685,18 @@
       <option name="project" value="LOCAL" />
       <updated>1522631426098</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="修改想关配置，以保证能正常访问html、jsp&#10;1 在web.xml中添加html、jsp不走DispatchServlet&#10;2 配置页面解析器&#10;@Bean&#10;    public InternalResourceViewResolver getInternalResourceViewResolver(){&#10;        InternalResourceViewResolver resolver = new InternalResourceViewResolver();&#10;        resolver.setPrefix(&quot;/&quot;);&#10;        resolver.setSuffix(&quot;.jsp&quot;);&#10;        resolver.setViewClass(JstlView.class);&#10;        return resolver;&#10;    }&#10;3 &lt;mvc:default-servlet-handler&gt; 用于处理静态资源">
+      <created>1522672633786</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1522672633786</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27730000" />
+    <option name="totallyTimeSpent" value="28898000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -694,6 +709,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1320" height="784" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.50396824" side_tool="true" weight="0.23065016" />
@@ -765,11 +781,12 @@
     <MESSAGE value="Just for test" />
     <MESSAGE value="Just for test3" />
     <MESSAGE value="Just for test4" />
-    <option name="LAST_COMMIT_MESSAGE" value="Just for test4" />
+    <MESSAGE value="修改想关配置，以保证能正常访问html、jsp&#10;1 在web.xml中添加html、jsp不走DispatchServlet&#10;2 配置页面解析器&#10;@Bean&#10;    public InternalResourceViewResolver getInternalResourceViewResolver(){&#10;        InternalResourceViewResolver resolver = new InternalResourceViewResolver();&#10;        resolver.setPrefix(&quot;/&quot;);&#10;        resolver.setSuffix(&quot;.jsp&quot;);&#10;        resolver.setViewClass(JstlView.class);&#10;        return resolver;&#10;    }&#10;3 &lt;mvc:default-servlet-handler&gt; 用于处理静态资源" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改想关配置，以保证能正常访问html、jsp&#10;1 在web.xml中添加html、jsp不走DispatchServlet&#10;2 配置页面解析器&#10;@Bean&#10;    public InternalResourceViewResolver getInternalResourceViewResolver(){&#10;        InternalResourceViewResolver resolver = new InternalResourceViewResolver();&#10;        resolver.setPrefix(&quot;/&quot;);&#10;        resolver.setSuffix(&quot;.jsp&quot;);&#10;        resolver.setViewClass(JstlView.class);&#10;        return resolver;&#10;    }&#10;3 &lt;mvc:default-servlet-handler&gt; 用于处理静态资源" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="11" />
+      <option name="time" value="12" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -777,13 +794,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.5.RELEASE/spring-web-4.3.5.RELEASE-sources.jar!/org/springframework/web/bind/annotation/ResponseBody.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="39" column="18" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.5.RELEASE/spring-web-4.3.5.RELEASE-sources.jar!/org/springframework/web/bind/annotation/RequestMapping.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="71">
@@ -1050,13 +1060,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.5.RELEASE/spring-webmvc-4.3.5.RELEASE-sources.jar!/org/springframework/web/servlet/DispatcherServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="1294" column="34" lean-forward="true" selection-start-line="1294" selection-start-column="34" selection-end-line="1294" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -1064,41 +1067,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.5.RELEASE/spring-webmvc-4.3.5.RELEASE-sources.jar!/org/springframework/web/servlet/DispatcherServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="31" column="8" lean-forward="true" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
+        <state relative-caret-position="83">
+          <caret line="1294" column="34" lean-forward="true" selection-start-line="1294" selection-start-column="34" selection-end-line="1294" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/lxy/study/controller/TestController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="29" column="22" lean-forward="true" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+        <state relative-caret-position="158">
+          <caret line="126" column="24" lean-forward="true" selection-start-line="126" selection-start-column="24" selection-end-line="126" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/lxy/study/config/AppConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+        <state relative-caret-position="249">
+          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lxy/study/controller/TestController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/Test.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="130" column="34" lean-forward="true" selection-start-line="130" selection-start-column="34" selection-end-line="130" selection-end-column="34" />
+        <state>
+          <caret column="10" lean-forward="true" selection-start-column="10" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.5.RELEASE/spring-webmvc-4.3.5.RELEASE-sources.jar!/org/springframework/web/servlet/FrameworkServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="861" column="5" lean-forward="true" selection-start-line="861" selection-start-column="5" selection-end-line="861" selection-end-column="5" />
+        <state relative-caret-position="174">
+          <caret line="862" lean-forward="true" selection-start-line="862" selection-end-line="862" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="29" column="34" lean-forward="true" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="26" column="77" selection-start-line="26" selection-start-column="77" selection-end-line="26" selection-end-column="77" />
         </state>
       </provider>
     </entry>

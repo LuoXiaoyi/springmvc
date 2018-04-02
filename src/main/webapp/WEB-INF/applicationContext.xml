@@ -26,7 +26,7 @@
 			expression="org.springframework.stereotype.Controller" /-->
 	</context:component-scan>
 	<!-- mvc中提供了默认的servlet来处理静态资源，即当所有的mapping都匹配不上的时候，
-		最后匹配到SimpleUrlHandlerMapping，这里主要是用于ModelAndView转发的时候，处理html、jsp等资源用 -->
+		最后匹配到SimpleUrlHandlerMapping，这里主要是用于ModelAndView转发的时候，处理html/CSS等资源用 -->
 	<mvc:default-servlet-handler/>
 
 </beans>

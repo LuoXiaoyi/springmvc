@@ -13,7 +13,7 @@ public class AppConfig {
      * Jsp视图解析器
      * @return
      */
-   @Bean
+    @Bean
     public InternalResourceViewResolver getInternalResourceViewResolver(){
         InternalResourceViewResolver resolver = new InternalResourceViewResolver();
         resolver.setPrefix("/");
