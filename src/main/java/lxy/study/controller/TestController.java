@@ -17,12 +17,10 @@ import org.springframework.http.HttpMethod;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.ServletRequest;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
-import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
 
@@ -125,14 +123,6 @@ public class TestController {
     public String index() {
         System.out.println("index....");
         return "/demo/hello";
-    }
-
-    @RequestMapping("/demo/show2")
-    public ModelAndView index2() {
-        System.out.println("index2....");
-        ModelAndView mav = new ModelAndView();
-        mav.addObject("",new Object());
-        return mav;
     }
 
 }

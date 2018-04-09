@@ -28,6 +28,12 @@
             <artifactId>jackson-annotations</artifactId>
             <version>2.9.4</version>
         </dependency>
+        <!-- 为支持restful请求中对application/xml 格式的数据进行处理 -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.dataformat</groupId>
+            <artifactId>jackson-dataformat-xml</artifactId>
+            <version>2.9.0</version>
+        </dependency>
 
         <!-- For Log -->
         <dependency>

@@ -23,6 +23,17 @@
         <!-- / 不会匹配JSP页面，/* 匹配所有的资源 -->
         <url-pattern>/</url-pattern>
     </servlet-mapping>
+
+    <!-- 对put数据的处理过滤器 -->
+    <filter>
+        <filter-name>httpPutFormFilter</filter-name>
+        <filter-class>org.springframework.web.filter.HttpPutFormContentFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>httpPutFormFilter</filter-name>
+        <servlet-name>dispatcherServlet</servlet-name>
+    </filter-mapping>
+
     <!-- html 页面不走DispatcherServlet
       和这个xml的配置效果相当<mvc:default-servlet-handler/>，通常如果配置了mvc的xml配置，这个配置就不需要了。
     -->
