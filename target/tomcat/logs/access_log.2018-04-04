@@ -1,0 +1,2 @@
+127.0.0.1 - - [04/Apr/2018:09:27:19 +0800] "GET /springmvc/testCookies HTTP/1.1" 200 109 http-bio-9090-exec-1 353658
+127.0.0.1 - - [04/Apr/2018:09:45:17 +0800] "GET /springmvc/testCookies HTTP/1.1" 200 36 http-bio-9090-exec-1 527663
