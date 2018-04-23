@@ -1,7 +1,10 @@
 package lxy.study.core.controller;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import lxy.study.core.model.Country;
+import lxy.study.core.plugins.PageInfo;
 import lxy.study.core.service.CountryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,6 +23,8 @@ public class CountryController {
 
   @RequestMapping("/country/queryAll")
   public List<Country> queryAllCountries(){
-    return countryService.queryAllCountries();
+    Map<String,Object> param = new HashMap<>();
+    param.put(PageInfo.PAGE_INFO_KEY,PageInfo.DEFAULT_PAGE_INFO);
+    return countryService.queryAllCountries(param);
   }
 }

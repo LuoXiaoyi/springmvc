@@ -6,6 +6,7 @@
 package lxy.study.core.mappers;
 
 import java.util.List;
+import java.util.Map;
 import lxy.study.core.model.Country;
 
 /**
@@ -17,6 +18,11 @@ import lxy.study.core.model.Country;
  */
 public interface CountryMapper {
 
-  List<Country> queryAllCountries();
+  /**
+   * 支持分页查询，通过<pageInfo,PageInfo>传入map
+   * @param param
+   * @return
+   */
+  List<Country> queryAllCountriesByPage(Map<String,Object> params);
 
 }

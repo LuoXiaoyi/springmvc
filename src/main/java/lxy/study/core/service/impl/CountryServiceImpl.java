@@ -1,6 +1,7 @@
 package lxy.study.core.service.impl;
 
 import java.util.List;
+import java.util.Map;
 import lxy.study.core.mappers.CountryMapper;
 import lxy.study.core.model.Country;
 import lxy.study.core.service.CountryService;
@@ -24,8 +25,8 @@ public class CountryServiceImpl implements CountryService {
   private CountryMapper countryMapper;
 
   @Override
-  public List<Country> queryAllCountries() {
+  public List<Country> queryAllCountries(Map<String,Object> param) {
     logger.info("queryAllCountries...");
-    return countryMapper.queryAllCountries();
+    return countryMapper.queryAllCountriesByPage(param);
   }
 }

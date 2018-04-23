@@ -21,7 +21,12 @@
 		<!-- 同样可以通过配置包路径，扫描指定包下面的所有handler类 -->
 		<package name="com.lxy.study.core.typehandlers"/>
 	</typeHandlers>
-
+	<plugins>
+		<plugin interceptor="lxy.study.core.plugins.PagePlugin">
+			<property name="dialect" value="mysql"></property>
+			<property name="pageSqlId" value=".*ByPage"></property>
+		</plugin>
+	</plugins>
 	<!-- mapper映射器的引入包含多种方法
    1. 通过mapper的resource属性导入xml的mapping配置文件 (推荐使用)
    2. 通过mapper的class属性导入java类型的Interface接口

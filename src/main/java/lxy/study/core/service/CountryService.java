@@ -1,6 +1,7 @@
 package lxy.study.core.service;
 
 import java.util.List;
+import java.util.Map;
 import lxy.study.core.model.Country;
 
 /**
@@ -11,5 +12,5 @@ import lxy.study.core.model.Country;
  */
 public interface CountryService {
 
-  public List<Country> queryAllCountries();
+  public List<Country> queryAllCountries(Map<String,Object> param);
 }

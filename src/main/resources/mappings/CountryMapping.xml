@@ -19,7 +19,7 @@
     LocalName,GovernmentForm,HeadOfState,Capital,Code2
   </sql>
 
-  <select id="queryAllCountries" resultMap="countryMap">
+  <select id="queryAllCountriesByPage" resultMap="countryMap" parameterType="map">
     select
     <include refid="countryColumns"/>
     from country
