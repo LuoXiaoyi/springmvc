@@ -14,7 +14,8 @@ import org.apache.ibatis.type.TypeHandler;
  * @author Luo.xiaoyi
  * @date 2018/04/21
  */
-public class ContinentEnumHandler implements TypeHandler<Continent> {
+public class ContinentEnumHandler // extends BaseTypeHandler<Continent> {
+  implements TypeHandler<Continent> {
 
   @Override
   public void setParameter(PreparedStatement ps, int i, Continent parameter, JdbcType jdbcType)

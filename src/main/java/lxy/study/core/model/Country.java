@@ -10,6 +10,8 @@ import lxy.study.core.enums.Continent;
  * @date 2018/04/21
  */
 public class Country implements Serializable {
+  public Country(){
+  }
 
   public Country(String code,String name){
     this.code = code;

@@ -13,4 +13,6 @@ import lxy.study.core.model.Country;
 public interface CountryService {
 
   public List<Country> queryAllCountries(Map<String,Object> param);
+
+  public int saveCountry(Country country);
 }

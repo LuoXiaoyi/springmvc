@@ -29,4 +29,10 @@ public class CountryServiceImpl implements CountryService {
     logger.info("queryAllCountries...");
     return countryMapper.queryAllCountriesByPage(param);
   }
+
+  @Override
+  public int saveCountry(Country country) {
+    if(country == null) return 0;
+    return countryMapper.saveCountry(country);
+  }
 }

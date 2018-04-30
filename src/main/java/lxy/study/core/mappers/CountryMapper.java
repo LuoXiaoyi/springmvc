@@ -8,6 +8,7 @@ package lxy.study.core.mappers;
 import java.util.List;
 import java.util.Map;
 import lxy.study.core.model.Country;
+import org.springframework.transaction.annotation.Transactional;
 
 /**
  * <p> Class: CountryMapper </p>
@@ -25,4 +26,10 @@ public interface CountryMapper {
    */
   List<Country> queryAllCountriesByPage(Map<String,Object> params);
 
+  /**
+   * 添加一个country
+   * @param country 需要被添加的Country
+   * @return 成功的数量
+   */
+  int saveCountry(Country country);
 }

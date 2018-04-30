@@ -1,40 +1,40 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE configuration
-	PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
-	"http://mybatis.org/dtd/mybatis-3-config.dtd">
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
-	<!-- 定义Mybatis的运行时行为 -->
-	<settings>
-		<!-- 自动映射配置：
+  <!-- 定义Mybatis的运行时行为 -->
+  <settings>
+    <!-- 自动映射配置：
       NONE：取消自动映射
       PARTIAL：对对象本身进行映射，不对嵌套进行映射，默认值
       FULL：对嵌套进行映射
      -->
-		<setting name="autoMappingBehavior" value="PARTIAL"/>
-		<!-- 开启延迟加载，默认是false -->
-		<setting name="lazyLoadingEnabled" value="true"/>
-		<!-- 默认的延迟加载是：层级延迟加载，如果开启aggressiveLazyLoading，
+    <setting name="autoMappingBehavior" value="PARTIAL"/>
+    <!-- 开启延迟加载，默认是false -->
+    <setting name="lazyLoadingEnabled" value="true"/>
+    <!-- 默认的延迟加载是：层级延迟加载，如果开启aggressiveLazyLoading，
     则会完全使用延迟加载，需要什么加载什么，默认为false -->
-		<setting name="aggressiveLazyLoading" value="true"/>
-	</settings>
-	<typeHandlers>
-		<!-- 同样可以通过配置包路径，扫描指定包下面的所有handler类 -->
-		<package name="com.lxy.study.core.typehandlers"/>
-	</typeHandlers>
-	<plugins>
-		<plugin interceptor="lxy.study.core.plugins.PagePlugin">
-			<property name="dialect" value="mysql"></property>
-			<property name="pageSqlId" value=".*ByPage"></property>
-		</plugin>
-	</plugins>
-	<!-- mapper映射器的引入包含多种方法
+    <setting name="aggressiveLazyLoading" value="true"/>
+  </settings>
+  <typeHandlers>
+    <typeHandler handler="lxy.study.core.typehandlers.ContinentEnumHandler"
+    javaType="lxy.study.core.enums.Continent"></typeHandler>
+  </typeHandlers>
+  <plugins>
+    <plugin interceptor="lxy.study.core.plugins.PagePlugin">
+      <property name="dialect" value="mysql"></property>
+      <property name="pageSqlId" value=".*ByPage"></property>
+    </plugin>
+  </plugins>
+  <!-- mapper映射器的引入包含多种方法
    1. 通过mapper的resource属性导入xml的mapping配置文件 (推荐使用)
    2. 通过mapper的class属性导入java类型的Interface接口
    3. 通过mapper的url属性导入xml的mapping配置文件
    4. 通过package标签，配置扫描的包路径，使mybatis自动装载包下面的所有mapper对象(@Mapper标注的)
    需要注意的是，这里的方式可以混合使用，但是，同一个mapper不能在多种不同的方式中被包含，不然会有异常抛出 -->
-	<mappers>
-		<mapper resource="mappings/CountryMapping.xml"/>
-	</mappers>
+  <mappers>
+    <mapper resource="mappings/CountryMapping.xml"/>
+  </mappers>
 
 </configuration>

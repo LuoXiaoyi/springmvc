@@ -1,5 +1,8 @@
 package lxy.study.config;
 
+import lxy.study.core.custompropeditors.CustomPropertyEditorRegister;
+import org.springframework.beans.PropertyEditorRegistrar;
+import org.springframework.beans.factory.config.CustomEditorConfigurer;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
@@ -15,16 +18,27 @@ import org.springframework.web.servlet.view.JstlView;
 @EnableWebMvc
 public class AppConfig {
 
-    /**
-     * Jsp视图解析器
-     * @return
-     */
-    @Bean
-    public InternalResourceViewResolver getInternalResourceViewResolver(){
-        InternalResourceViewResolver resolver = new InternalResourceViewResolver();
-        resolver.setPrefix("/");
-        resolver.setSuffix(".jsp");
-        resolver.setViewClass(JstlView.class);
-        return resolver;
-    }
+  /**
+   * Jsp视图解析器
+   */
+  @Bean
+  public InternalResourceViewResolver getInternalResourceViewResolver() {
+    InternalResourceViewResolver resolver = new InternalResourceViewResolver();
+    resolver.setPrefix("/");
+    resolver.setSuffix(".jsp");
+    resolver.setViewClass(JstlView.class);
+    return resolver;
+  }
+
+  /**
+   * 注册属性自定义属性编辑器
+   * @return
+   */
+  @Bean
+  public CustomEditorConfigurer getCustomEditorConfigurer(){
+    CustomEditorConfigurer customEditorConfigurer = new CustomEditorConfigurer();
+    customEditorConfigurer.setPropertyEditorRegistrars(
+        new PropertyEditorRegistrar[]{new CustomPropertyEditorRegister()});
+    return customEditorConfigurer;
+  }
 }
